@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /*Sắp xếp theo chiều dọc */
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+  }
+.vien-trai{
+    width: 50px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    /*Cố định phàn tử*/
+    position: fixed;
+    /*trục chính chạy từ trên xuống dưới*/
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    float: left;
+    /*Sắp các iteem đều nhau ra giữa*/
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.icon3{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    
+}
+.Tk{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    /*tự căn chỉnh ảnh*/
+    object-fit: cover;    
+}
+.decor1{
+    height: 150px;
+    width: 1550px;
+}
+.blackhole{
+   position: absolute;
+   height: 100px;
+   width: 100px; 
+   left: 100px;
+   top: 50px;
+   box-shadow:5px 10px #888888;
+}
+.logo{
+    font-family:fantasy;
+    color: rgb(216, 13, 13);
+    position: absolute;
+    left: 210px;
+    top:40px;
+}
+.logo2{
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+    position: absolute;
+    left: 210px;
+    top:100px;
+}
+.decor2{
+    height: 900px;
+    width: 1450px;
+    margin-top: 30px;
+    position: absolute;
+    left: 100px;
+}
+.decor2-1{
+    height: 600px;
+    width: 700px;
+    float: left;
+    
+}
+.decor2-2{
+    height: 600px;
+    width: 750px;
+    float: left;
+}
+.xacnhan{
+    margin-left: 20px;
+    height: 60px;
+    width: 120px;
+    background-color: red;
+    border: 10px solid red;
+    border-radius: 20px;
+    font-weight: 900;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.xacnhan:hover{
+    border: 10px solid aqua;
+    background-color: aqua;
+    opacity: 0.9;
+}

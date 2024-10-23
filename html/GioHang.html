@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="language" content="Vietnamese,vn">
+        <meta http-equiv="content-language" content="vi">
+        <meta name="keywords" content="bàn ghế gỗ, bàn ghế phòng khách, bàn ghế gỗ phòng khách, bộ bàn ghế gỗ, bộ bàn ghế phòng khách">
+        <link rel="stylesheet" href="E:\HTML\css\31.PhamVanToan.10121609\css\GioHang.css">
+        <title>Website bán đồ nội thất</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="vien-tren">
+            <div class="icon">
+                <div class="icon1"><a style="text-decoration: none;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html"><h1 class="logo">BlackHole</h1></a></div>
+                <div class="icon2"><ul class="menu">
+                    <li class="menu-item-1">
+                        <a style="text-decoration: none;color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html">
+                            <i class="fa-solid fa-house" style="margin-right: 5px;">
+                        </i>Trang chủ</a></li>
+                    <li class="menu-item-2"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-bars" style="margin-right: 5px;">
+                    </i> Danh mục sản phẩm</a></li>
+                    <li class="menu-item-3"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-fire" style="margin-right: 5px;">
+                    </i>Thịnh hành</a></li>
+                    <li class="menu-item-4"><a style="text-decoration: none;color: aliceblue;" href="https://www.facebook.com/profile.php?id=100011693294178">
+                        <i class="fa-brands fa-facebook" style="margin-right: 5px;"></i>Tư vấn</a></li>
+                    <div class="timkiem">
+                        <input class="timkiem-input" type="text" id="timkiem-input" placeholder="Search..." name="txtKe">
+                        <button class="timkiem-button" title="Tìm kiếm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </ul></div>
+                <div class="icon3"><img class="Tk" src="E:\HTML\css\31.PhamVanToan.10121609\img\8c61123d41308c6ed521.jpg" alt="">
+                    <div class="taikhoan"><a style="text-decoration: none; color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\dangnhap.html">
+                        <span class="taikhoan-icon" >Tài khoản</span>
+                        <i class="fa-solid fa-sort-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="showgiohang2" style="text-align: center; float: left;margin-left: 50px;"></div>
+        <div class="tt">
+            <b style="font-size: larger;">Nhập Thông Tin Khách Hàng</b>
+                    <form style="margin-top: 10px;" id ="from2">
+                            Họ Và Tên: <input type="text" name="hoten" id="ten" style="width: 300px;margin-left: 105px"/><br><br>
+                            Quê quán: <input list="que" name="que" id="que" style="width: 300px;margin-left: 115px;">
+                            <datalist  id="que">
+                                <option value="Yên Mỹ">Yên Mỹ</option>
+                                <option value="Mỹ Hào">Mỹ Hào</option>
+                                <option value="Hải Dương">Hải Dương</option>
+                                <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                <option value="Thái Bình">Thái Bình</option>
+                                </datalist><br><br>
+                                <label for="sdt">Number phone:</label>
+                                <input type="tel" id="sdt" name="sđt" style="width: 300px;margin-left: 80px"><br><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" style="width: 300px;margin-left: 140px;"><br><br>
+                                <label for="comment">Bạn vui lòng cho xin ý kiến: </label>
+                                <textarea name="comment" id="ykien" row="5" cols="30" style="width: 300px;"></textarea><br>
+                                <button class="buy-now" type="submit" onclick="dongydathang()">Thanh Toán</button>
+                    </form>
+            </div>
+        <script src="E:\HTML\css\31.PhamVanToan.10121609\js\GioHang.js"> </script>
+        <script>
+            showgiohangtrangtt();
+          //  function gui(){
+            //    var out = document.getElementById("from2");
+            //    alert("Sản phẩm đã được yêu cầu, vui lòng chờ người bán chấp nhận đơn hàng!!")
+             //   out.action = "E:\\HTML\\css\\31.PhamVanToan.10121609\\DoAn1.html";
+           // }
+            
+        </script>
+    </body>
+    </html>

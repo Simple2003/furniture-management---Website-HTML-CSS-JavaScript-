@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="language" content="Vietnamese,vn">
+        <meta http-equiv="content-language" content="vi">
+        <meta name="keywords" content="bàn ghế gỗ, bàn ghế phòng khách, bàn ghế gỗ phòng khách, bộ bàn ghế gỗ, bộ bàn ghế phòng khách">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="E:\HTML\css\31.PhamVanToan.10121609\css\ThanhToan.css">
+        <title>Website bán đồ nội thất</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="vien-tren">
+            <div class="icon">
+                <div class="icon1"><a style="text-decoration: none;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html"><h1 class="logo">BlackHole</h1></a></div>
+                <div class="icon2"><ul class="menu">
+                    <li class="menu-item-1">
+                        <a style="text-decoration: none;color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html">
+                            <i class="fa-solid fa-house" style="margin-right: 5px;">
+                        </i>Trang chủ</a></li>
+                    <li class="menu-item-2"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-bars" style="margin-right: 5px;">
+                    </i> Danh mục sản phẩm</a></li>
+                    <li class="menu-item-3"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-fire" style="margin-right: 5px;">
+                    </i>Thịnh hành</a></li>
+                    <li class="menu-item-4"><a style="text-decoration: none;color: aliceblue;" href="https://www.facebook.com/profile.php?id=100011693294178">
+                        <i class="fa-brands fa-facebook" style="margin-right: 5px;"></i>Tư vấn</a></li>
+                    <div class="timkiem">
+                        <a onclick="showcart()"><i class="fa-solid fa-cart-shopping fa-lg" style="margin-right: 5px;"></i><span id="demSp"></span></a>
+                    </div>
+                </ul></div>
+                <div class="icon3"><img class="Tk" src="E:\HTML\css\31.PhamVanToan.10121609\img\8c61123d41308c6ed521.jpg" alt="">
+                    <div class="taikhoan"><a style="text-decoration: none; color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\dangnhap.html">
+                        <span class="taikhoan-icon" >Tài khoản</span>
+                        <i class="fa-solid fa-sort-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divtong">
+            
+            <div class="thanhtoan">
+                <form action="E:\HTML\css\31.PhamVanToan.10121609" id="Sp">
+                    <button type="submit" style=" width: 350px; border: none; background-color: white "><img id="img" src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong-co-dien-kieu-luis-duoi-cach-tan-go-soi--gn1011-1652416697-66600c.jpg" style="height:350px;"></button>
+                </form>
+                <div class="anh-clone">
+                    <button onclick="a()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong1.jpg" style="width:75px;"></button>
+                    <button onclick="b()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong2.jpg" style="width:75px; "></button>
+                    <button onclick="c()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong3.jpg" style="width:75px;"></button>
+                    <button onclick="d()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong4.jpg" style="width:75px;"></button></div>
+                </div>
+            <div class="gia">
+                <div style="width:340px">
+                    <b>
+                        <div style="width:340px; font-size: 22px; font-family: tahoma;margin-top: 20px;">Giường Gỗ Cổ Điển Kiểu Luis</div>
+                    </b><br>
+                    <img>
+                    <p style="font-size: large;">Mã Sản Phẩm: GN101</p>
+                    <p style="font-size: large;">Chất Liệu: Gỗ Hương</p>
+                    <p style="font-size: large;">Phân Loại: Salon Gỗ</p>
+                    <p style="font-size: large;">Bảo Hành: 5 năm</p>
+                    <div style="font-size: 22px; font-family: tahoma; float:left">Giá:</div>
+                    <div style="color: red; font-size: 22px; float:left; font-family:tahoma">37000000</div>đ<br><br>
+                    <span>Số Lượng: </span><input type="number" id="sl" name="soluong" min="1" max="10" value="1">
+                    <button class="buy-now"  id="dh" onclick="addcart(this)">Đặt Hàng</button>
+                </div>          
+            </div>
+            <!--<div class="GioHang">
+                <a onclick="showcart()"><img src="carts.png" style="height: 60px;width: 60px;"></a>
+            </div>
+            <div class="showcart" id="showcart">
+                <table>
+                    <tr style="background-color:rgb(202, 194, 194);">
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Đơn Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                    <tbody id="showgiohang">
+                        
+                    </tbody>
+                </table>    
+            </div>-->
+            <div id="showcart">
+                <div id="showgiohang" style="text-align: center;" class="GioHang"></div>
+            </div>
+            <div class="chitiet">
+                <b style="font-size: larger; margin-left: 10px;">Chi Tiết Sản Phẩm</b>
+                <div class="chitiet-1"></div>
+                <p style="margin-left: 10px;">Giường Cổ Điển Kiểu Luis Đuôi Cách Tân Gỗ Sồi - GN1011 là một mẫu giường mới với thiết kế, chạm khắc hoa văn tinh xảo, đây là một siêu phẩm mang đến nét sang trọng  quý phái cho căn phòng ngủ của bạn.</p>
+                <p style="margin-left: 10px;">Với màu sắc điểm nhũ vàng đồng tinh tế phong cách Châu Âu, kích thước 1m8x2m đây là mẫu giường rộng, hiện nay sản phẩm này đang được rất nhiều khách hàng trên toàn quốc ưa chuộng và tin dùng.</p>
+                <p style="margin-left: 10px;">Bởi chất lượng tốt và giá thành cũng hợp lý lên rất nhiều khách hàng mua về để làm giường cưới và </p>
+            </div>
+            
+        </div>
+        <script src="E:\HTML\css\31.PhamVanToan.10121609\js\GioHang.js">
+        </script>
+        <script>
+            showcart();
+            function a(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\giuong1.jpg";
+            }
+            function b(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\giuong2.jpg";
+            }
+            function c(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\giuong3.jpg";
+            }
+            function d(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\giuong4.jpg";
+            }
+        </script>
+    </body>
+</html>

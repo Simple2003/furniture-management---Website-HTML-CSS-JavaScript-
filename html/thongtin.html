@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="language" content="Vietnamese,vn">
+        <meta http-equiv="content-language" content="vi">
+        <meta name="keywords" content="bàn ghế gỗ, bàn ghế phòng khách, bàn ghế gỗ phòng khách, bộ bàn ghế gỗ, bộ bàn ghế phòng khách">
+        <link rel="stylesheet" href="E:\HTML\css\31.PhamVanToan.10121609\GioHang.css">
+        <title>Website bán đồ nội thất</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <style>
+            .buy-now{
+            margin-left: 20px;
+            height: 40px;
+            width: 100px;
+            background-color: red;
+            border: 10px solid red;
+            border-radius: 20px;
+            font-weight: 900;
+            color: aliceblue;
+            margin-top: 20px;
+            }
+            .buy-now:hover{
+                border: 10px solid aqua;
+                background-color: aqua;
+                opacity: 0.9;
+            }
+            .tt{
+            position:absolute;
+            top: 150px;
+            left: 600px;
+            height: 750px;
+            width: 1550px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="E:\HTML\css\31.PhamVanToan.10121609\stretched-1920-1080-1226173.jpg" style="height: 100%;width: 100%;opacity: 0.8;position: relative;">
+        <div class="tt">
+        <b style="font-size: larger;">Nhập Thông Tin Khách Hàng</b>
+                <form style="margin-top: 10px;" id ="from2">
+                    Họ Và Tên: <input type="text" name="hoten" id="ten" style="width: 300px;margin-left: 105px"/><br><br>
+                    Quê quán: <input list="que" name="que" style="width: 300px;margin-left: 115px;">
+                    <datalist  id="que">
+                        <option value="Yên Mỹ">Yên Mỹ</option>
+                        <option value="Mỹ Hào">Mỹ Hào</option>
+                        <option value="Hải Dương">Hải Dương</option>
+                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                        <option value="Thái Bình">Thái Bình</option>
+                        </datalist><br><br>
+                        <label for="sđt">Number phone:</label>
+                        <input type="tel" id="sđt" name="sđt" placeholder="000-0000-000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required style="width: 300px;margin-left: 80px"><br><br>
+                        <label for="email" id="email" name="email" value="example@gmail.com">Email:</label>
+                        <input type="email" id="email" name="email" style="width: 300px;margin-left: 140px;"><br><br>
+                        <label for="comment">Bạn vui lòng cho xin ý kiến: </label>
+                        <textarea name="comment" row="5" cols="30" style="width: 300px;"></textarea><br>
+                        <button class="buy-now" type="submit" onclick="gui()">Gửi</button>
+                </form>
+        </div>
+        <script>
+            function gui(){
+                var out = document.getElementById("from2");
+                alert("Cảm ơn quý khách đã ủng hộ!!")
+                out.action = "E:\\HTML\\css\\31.PhamVanToan.10121609\\DoAn1.html";
+            }
+        </script>
+    </body>
+</html>

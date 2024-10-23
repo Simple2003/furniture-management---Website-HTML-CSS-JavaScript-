@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="language" content="Vietnamese,vn">
+        <meta http-equiv="content-language" content="vi">
+        <meta name="keywords" content="bàn ghế gỗ, bàn ghế phòng khách, bàn ghế gỗ phòng khách, bộ bàn ghế gỗ, bộ bàn ghế phòng khách">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+        <title>Website bán đồ nội thất</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="E:\HTML\css\31.PhamVanToan.10121609\css\admin.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    </head>
+    <body>
+            <div class="vien-trai">
+                <a ><img class="Tk" src="E:\HTML\css\31.PhamVanToan.10121609\img\8c61123d41308c6ed521.jpg" alt=""></a>
+                <a style="color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html"><i class="fa-solid fa-house"></i></a>
+                <a style="text-decoration: none;color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\admin2.html"><i class="fa-sharp fa-solid fa-clock-rotate-left"></i></a>
+                <a style="text-decoration: none;color: aliceblue;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a style="text-decoration: none;color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\GioHang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="decor1">
+                <div><img src="E:\HTML\css\31.PhamVanToan.10121609\img\blackhole.jpg" alt="" class="blackhole">
+                    <h1 class="logo">BlackHole</h1>
+                    <h3 class="logo2">ADMIN: Phạm Văn Toàn</h3>
+                </div>
+            </div>
+            <div class="decor2">
+                <div class="decor2-1">
+                    <div id="thongtinnhanhang"></div>
+                    <div id="showgiohang2" class="sanpham"></div>
+                    <div><button class="xacnhan" onclick="xacnhan()">Xác nhận đơn hàng</button><button class="xacnhan" onclick="resert()">Resert Đơn Hàng</button></div>
+                    <div><h2>Số sản phẩm còn trong kho </h2></div>
+                    <div class="soluongsp">
+                        <table>
+                            <!--<tr><b>Nhập số lượng Bộ Bàn Ghế Gỗ Hương Đá Tay: </b><input type="number" style="width: 50px;" value="0" id="nhapsl"><a><button onclick="xacnhansl()">Xác nhận</button></a></tr>!-->
+                            <tbody id="soluongsp1">
+                            <tr>
+                                <td><b>Bộ Bàn Ghế Gỗ Hương Đá Tay</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="E:\HTML\css\31.PhamVanToan.10121609\img\salon-go-cam-lai-10-mon-tay-14-cham-nghe--sl919-1658977321-cfd34c.jpg" style="height: 100px;width: 100px;"></td>
+                                <td><b>Số sản phẩm: </b></td><td style="color: red" id="hienthisl">10</td>
+                            </tr></tbody></table>
+                            <table>
+                            <tbody id="soluongsp2">
+                            <tr>
+                                <td><b>Tủ Rượu Gỗ Đỏ Cao Cấp</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="E:\HTML\css\31.PhamVanToan.10121609\img\tu-ruou-go-go-do-goc--tr2027-1654662541-6f7a3b.jpg" style="height: 100px;width: 100px;"></td>
+                                <td><b>Số sản phẩm: </b></td><td style="color: red">5</td>
+                            </tr></tbody></table>
+                            <table>
+                            <tbody id="soluongsp3">
+                            <tr>
+                                <td><b>Giường Gỗ Cổ Điển Kiểu Luis</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="E:\HTML\css\31.PhamVanToan.10121609\img\giuong-co-dien-kieu-luis-duoi-cach-tan-go-soi--gn1011-1652416697-66600c.jpg" style="height: 100px;width: 100px;"></td>
+                                <td><b>Số sản phẩm: </b></td><td style="color: red">6</td>
+                            </tr></tbody></table>
+                            <table>
+                            <tbody id="soluongsp4">
+                            <tr>
+                                <td><b>Bàn Trang Điểm Cổ Điển</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="E:\HTML\css\31.PhamVanToan.10121609\img\ban-trang-diem-go-go-do-co-dien--btd1011-1651033255-0008b9.jpg" style="height: 100px;width: 100px;"></td>
+                                <td><b>Số sản phẩm: </b></td><td style="color: red">7</td>
+                            </tr></tbody></table>
+                    </div>
+                </div>
+                <div class="decor2-2">
+                    <h1>Số người truy cập Website</h1>
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+            <script>
+            const xValues = ["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12"];
+            new Chart("myChart", {
+            type: "line",
+            data: {
+            labels: xValues,
+            datasets: [{ 
+            data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478,1223,1113],
+            borderColor: "red",
+            fill: false
+            }, 
+{ 
+            data: [300,700,2000,5000,6000,4000,2000,1000,200,100,131,1],
+            borderColor: "blue",
+            fill: false
+            }]
+            },
+            options: {
+            legend: {display: false}
+            }
+            });
+        </script>
+            <h3>Trong khu vực Hưng Yên</h3><div style="height: 20px;width: 20px;background-color: blue;border-radius: 30px;"></div>
+            <h3>Trong nước</h3><div style="height: 20px;width: 20px;background-color: red;border-radius: 30px;"></div>
+                </div>
+            </div>
+            <script src="E:\HTML\css\31.PhamVanToan.10121609\js\GioHang.js">        
+            </script>
+            <script>
+                showttnguoinhan();
+                showgiohangtrangtt();
+                countsp();
+            </script>
+
+    </body>
+</html>

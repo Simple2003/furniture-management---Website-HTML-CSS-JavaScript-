@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+}
+.div-tong{
+    height: 780px;
+    width: 1550px;
+    position: relative;
+}
+.login{
+    position:absolute;
+    top: 150px;
+    left: 600px;
+    height: 750px;
+    width: 1550px;
+}
+.btn{
+    margin-left: 150px;
+}

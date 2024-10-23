@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+}
+.vien-tren{
+    width: 1520px;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    float: left;
+}
+
+.icon{
+    height: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+}
+.icon1{
+    flex: 1;
+}
+.icon2{
+    flex: 6;
+}
+.icon3{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    font-family:fantasy;
+    color: rgb(216, 13, 13);
+}
+.menu{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    
+}
+.menu-item-1{
+    margin-right: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.menu-item-2{
+    margin-right: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.menu-item-3{
+    margin-right: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}.menu-item-4{
+    margin-right: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Tk{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+    
+}
+.taikhoan-icon{
+    font-weight: bold;
+}
+.taikhoan{
+    margin: 0 20px;
+}
+.timkiem{
+    margin-left: 100px;
+}
+.timkiem-button{
+    position: absolute;
+}
+.divtong{
+    width: 1520px;
+    height: 500px;
+    color: black;
+    float: left;
+}
+.textbuy{
+    height: 50px;
+    margin-top: 30px;
+    width: 1520px;
+    background-color:  rgb(70, 164, 214);
+    font-size: x-large;
+    color: aliceblue;
+}
+.showcart{
+    position: fixed;
+    border-radius: 10px;
+    top: 180px;
+    padding: 10px;
+    text-align: center;
+    background-color: #EEE;
+    border: 1px #CCC solid;
+}
+.mua{
+    position: absolute;
+    top:155px;
+    left: 1200px;
+}
+.buy-now{
+    margin-left: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    border: 10px solid red;
+    border-radius: 20px;
+    font-weight: 900;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.buy-now:hover{
+    border: 10px solid aqua;
+    background-color: aqua;
+    opacity: 0.9;
+}
+.tt{
+    position:absolute;
+    top: 100px;
+    left: 1000px;
+    height: 750px;
+    width: 1550px;
+    }

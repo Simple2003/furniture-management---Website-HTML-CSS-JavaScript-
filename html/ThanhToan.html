@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="language" content="Vietnamese,vn">
+        <meta http-equiv="content-language" content="vi">
+        <meta name="keywords" content="bàn ghế gỗ, bàn ghế phòng khách, bàn ghế gỗ phòng khách, bộ bàn ghế gỗ, bộ bàn ghế phòng khách">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="E:\HTML\css\31.PhamVanToan.10121609\css\ThanhToan.css">
+        <title>Website bán đồ nội thất</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="vien-tren">
+            <div class="icon">
+                <div class="icon1"><a style="text-decoration: none;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html"><h1 class="logo">BlackHole</h1></a></div>
+                <div class="icon2"><ul class="menu">
+                    <li class="menu-item-1">
+                        <a style="text-decoration: none;color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\DoAn1.html">
+                            <i class="fa-solid fa-house" style="margin-right: 5px;">
+                        </i>Trang chủ</a></li>
+                    <li class="menu-item-2"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-bars" style="margin-right: 5px;">
+                    </i> Danh mục sản phẩm</a></li>
+                    <li class="menu-item-3"><a style="text-decoration: none;color: aliceblue;" href=""><i class="fa-solid fa-fire" style="margin-right: 5px;">
+                    </i>Thịnh hành</a></li>
+                    <li class="menu-item-4"><a style="text-decoration: none;color: aliceblue;" href="https://www.facebook.com/profile.php?id=100011693294178">
+                        <i class="fa-brands fa-facebook" style="margin-right: 5px;"></i>Tư vấn</a></li>
+                    <div class="timkiem">
+                        <a onclick="showcart()"><i class="fa-solid fa-cart-shopping fa-lg" style="margin-right: 5px;"></i><span id="demSp"></span></a>
+                    </div>
+                </ul></div>
+                <div class="icon3"><img class="Tk" src="E:\HTML\css\31.PhamVanToan.10121609\img\8c61123d41308c6ed521.jpg" alt="">
+                    <div class="taikhoan"><a style="text-decoration: none; color: aliceblue;" href="E:\HTML\css\31.PhamVanToan.10121609\html\dangnhap.html">
+                        <span class="taikhoan-icon" >Tài khoản</span>
+                        <i class="fa-solid fa-sort-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divtong">
+            
+            <div class="thanhtoan">
+                <form action="E:\HTML\css\31.PhamVanToan.10121609" id="Sp">
+                    <button type="submit" style=" width: 350px; border: none; background-color: white "><img id="img" src="E:\HTML\css\31.PhamVanToan.10121609\img\salon-go-cam-lai-10-mon-tay-14-cham-nghe--sl919-1658977321-cfd34c.jpg" style="height:350px;" id="img"></button>
+                </form>
+                <div class="anh-clone">
+                    <button onclick="a()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\anh-clone1.jpg" style="width:75px;"></button>
+                    <button onclick="b()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\anh-clone2.jpg" style="width:75px; "></button>
+                    <button onclick="c()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\anh-clone3.jpg" style="width:75px;"></button>
+                    <button onclick="d()"><img align="left" src="E:\HTML\css\31.PhamVanToan.10121609\img\anh-clone4.jpg" style="width:75px;"></button></div>
+                </div>
+            <div class="gia">
+                <div style="width:340px">
+                    <b>
+                        <div style="width:340px; font-size: 22px; font-family: tahoma;margin-top: 20px;">Bộ Bàn Ghế Gỗ Hương Đá Tay</div>
+                    </b><br>
+                    <img>
+                    <p style="font-size: large;">Mã Sản Phẩm: SL185</p>
+                    <p style="font-size: large;">Chất Liệu: Gỗ Hương</p>
+                    <p style="font-size: large;">Phân Loại: Salon Gỗ</p>
+                    <p style="font-size: large;">Bảo Hành: 5 năm</p>
+                    <div style="font-size: 22px; font-family: tahoma; float:left">Giá:</div>
+                    <div style="color: red; font-size: 22px; float:left; font-family:tahoma">59000000</div>đ<br><br>
+                    <span>Số Lượng: </span><input type="number" id="sl" name="soluong" min="1" max="10" value="1">
+                    <button class="buy-now"  id="dh" onclick="addcart(this)">Thêm Vào Giỏ Hàng</button>
+                </div>          
+            </div>
+            <div id="showcart">
+                <div id="showgiohang" style="text-align: center;" class="GioHang"></div>
+            </div>
+            <div class="chitiet">
+                <b style="font-size: larger; margin-left: 10px;">Chi Tiết Sản Phẩm</b>
+                <div class="chitiet-1"></div>
+                <p style="margin-left: 10px;">Bộ Bàn Ghế Gỗ Hương Đá Tay là một trong những sự lựa chọn tuyệt vời cho không gian phòng khách của gia đình, văn phòng công ty, biệt thự hay nhà phố.</p>
+                <p style="margin-left: 10px;">Bộ Bàn Ghế Gỗ Hương Đá Tay gồm có 6 món: 1 ghế dài, 2 ghế đơn, 1 bàn, 2 đôn, Bộ sản phẩm có kích cỡ tay 12 tạo nên sự hoàn hảo, là điểm nhấn nổi bật của không gian phòng khách. Bộ salon có màu sắc chủ đạo là màu nâu, kèm theo thiết kế phong cách cổ điển. Họa tiết chính của mẫu salon gỗ đẹp của bộ ghế này là Nghê, chạm khắc Nghê được khắc họa tỉ mỉ qua từng đường nét từ đầu đến đuôi và cả phần lưng ghế, đỉnh ghế, chân ghế trong giống y như thật.</p>
+                <p style="margin-left: 10px;">Phần ghế ngồi của bộ salon sở hữu phần tay chạm nghê độc đáo, lưng ghế chạm khắc họa tiết rồng nghê độc đáo, cuốn hút, Mặt ngồi của ghế được thiết kế khung tranh với bề mặt rộng lớn, tạo độ thoải mái cho người sử dụng. Mặt bàn của bộ salon có diện tích lớn, khung tranh, mặt bàn sở hữu những đường vân uốn lượn sắc nét, 2 bên thành bàn được điểm xuyến những họa tiết lan tây sống động, 4 chân bàn vững chắc, chạm hình rồng thể hiện sự hùng mạnh, uy vũ của sản phẩm.</p>
+                <p style="margin-left: 10px;">Sở hữu thiết kế cổ điển, tinh xảo, bộ salon là điểm nhấn đặc biệt khiến cho ai nhìn vào cũng phải động lòng trước vẻ đẹp tuyệt mĩ của nó. Bộ salon được chế tác hoàn toàn từ gỗ hương đá, không pha trộn tạp chất hoặc dùng gỗ kém chất lượng thay thế nên quý khách hàng có thể an tâm khi chọn lựa. Các khối gỗ được lựa chọn để chế tác bộ </p>
+                <p style="margin-left: 10px;">Bàn ghế phòng khách này có vân gỗ thẳng, mềm, sợi đỏ, hơi nâu, vừa đơn giản mộc mạc nhưng cũng đủ sang trọng và quý phái. Những người thợ thủ công tại </p>
+            </div>
+        </div>
+        <script src="E:\HTML\css\31.PhamVanToan.10121609\js\GioHang.js">
+        </script>
+        <script>
+            showcart();
+            function a(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\anh-clone1.jpg";
+            }
+            function b(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\anh-clone2.jpg";
+            }
+            function c(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\anh-clone3.jpg";
+            }
+            function d(){
+                document.getElementById("img").src = "E:\\HTML\\css\\31.PhamVanToan.10121609\\img\\anh-clone4.jpg";
+            }
+        </script>
+    </body>
+</html>
